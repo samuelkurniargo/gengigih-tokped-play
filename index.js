@@ -2,9 +2,9 @@ import express from "express";
 import "dotenv/config";
 import mongoose from "mongoose";
 
-import videoRouter from "./src/routes/video.js";
-import productRouter from "./src/routes/product.js";
-import commentRouter from "./src/routes/comment.js";
+import videoRouter from "./src/routes/videosRouter.js";
+import productRouter from "./src/routes/productsRouter.js";
+import commentRouter from "./src/routes/commentsRouter.js";
 
 const app = express();
 const mongoString = process.env.DATABASE_URL;

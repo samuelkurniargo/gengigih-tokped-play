@@ -1,4 +1,4 @@
-import { getProductListService } from "../services/productService.js";
+import { getProductListService } from "../services/productsService.js";
 
 export const getProductList = async (req, res) => {
   try {

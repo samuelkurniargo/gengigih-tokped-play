@@ -1,4 +1,4 @@
-import Product from "../models/productModel.js";
+import Product from "../models/Product.js";
 
 export const getProductByVideo = async (videoId) => {
   //   console.log(await Product.find());

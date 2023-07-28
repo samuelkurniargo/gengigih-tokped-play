@@ -1,4 +1,4 @@
-import Comment from "../models/commentModel.js";
+import Comment from "../models/Comment.js";
 
 export const getAllComment = async (videoId) => {
   return await Comment.find({ videoId: videoId }).select(

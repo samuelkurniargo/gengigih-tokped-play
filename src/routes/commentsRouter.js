@@ -2,7 +2,7 @@ import Express from "express";
 import {
   getCommentsList,
   addComment,
-} from "../controllers/commentController.js";
+} from "../controllers/commentsController.js";
 
 const router = Express.Router();
 

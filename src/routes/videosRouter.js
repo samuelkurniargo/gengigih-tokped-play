@@ -1,5 +1,5 @@
 import Express from "express";
-import { getVideoList, getDetailVideoById } from "../controllers/videoController.js";
+import { getVideoList, getDetailVideoById } from "../controllers/videosController.js";
 
 const router = Express.Router();
 

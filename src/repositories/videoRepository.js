@@ -1,4 +1,4 @@
-import Video from "../models/videoModel.js";
+import Video from "../models/Video.js";
 
 // const Video = require("../models/videoModel");
 

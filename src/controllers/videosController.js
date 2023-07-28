@@ -1,7 +1,7 @@
 import {
   getVideoList as videoService,
   getVideoById,
-} from "../services/videoService.js";
+} from "../services/videosService.js";
 
 export const getVideoList = async (req, res) => {
   //   console.log("testing");

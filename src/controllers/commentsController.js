@@ -1,7 +1,7 @@
 import {
   getCommentList as commentService,
   addCommentService,
-} from "../services/commentService.js";
+} from "../services/commentsService.js";
 
 export const getCommentsList = async (req, res) => {
   try {
