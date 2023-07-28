@@ -113,9 +113,9 @@ Content-Type: application/json
 **Content:**
 ```
 [
-{<comment_object>},
-{<comment_object>},
-{<comment_object>}
+    {<comment_object>},
+    {<comment_object>},
+    {<comment_object>}
 ]
 ```
 * **Error Response:**
@@ -128,7 +128,12 @@ Creates a new Comment and returns success message.
 * **URL Params**  
 _Required:_ `videoId=[string]`
 * **Data Params**  
-None
+```js
+{
+    username: string,
+    comment: string
+}
+```
 * **Headers**  
 Content-Type: application/json
 * **Success Response:**
