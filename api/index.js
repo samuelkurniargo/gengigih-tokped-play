@@ -3,7 +3,8 @@ import "dotenv/config";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import cors from "cors";
-import path from "path";
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 import videoRouter from "./src/routes/videosRouter.js";
 import productRouter from "./src/routes/productsRouter.js";
@@ -31,9 +32,13 @@ app.use("/videos", videoRouter);
 app.use("/products", productRouter);
 app.use("/comments", commentRouter);
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 app.use(express.static(path.join(__dirname, "../frontend/dist")));
+
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/dist/index.html"), (err) => {
+  res.sendFile(path.join(__dirname , "../frontend/dist/index.html"), (err) => {
     res.status(500).send(err);
   });
 });
