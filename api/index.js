@@ -1,6 +1,8 @@
 import express from "express";
 import "dotenv/config";
 import mongoose from "mongoose";
+import bodyParser from "body-parser";
+import cors from "cors";
 
 import videoRouter from "./src/routes/videosRouter.js";
 import productRouter from "./src/routes/productsRouter.js";
@@ -21,6 +23,8 @@ database.once("connected", () => {
 });
 
 app.use(express.json());
+app.use(bodyParser.json());
+app.use(cors());
 
 app.use("/videos", videoRouter);
 app.use("/products", productRouter);
